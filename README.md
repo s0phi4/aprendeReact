@@ -10,7 +10,7 @@
 
 - Use className instead of class
 
-  ``` <h1 className = 'categoryOne'>Syntax</h1>```
+  - ``` <h1 className = 'categoryOne'>Syntax</h1>```
 - Example <br><br>
   ```var React = require('react');```<br>
   ```var ReactDOM = require('react-dom');```
@@ -18,3 +18,17 @@
 <br>
 ```var myDiv = <div className='big'>I am a big DIV</div>```
 ```ReactDOM.render(myDiv, document.getElementById('app')); ```
+
+- Self-closing tags
+  - Include slash in self-closing tags
+    ``` <br />```
+
+- Use of curly braces for JS expressions within HTML tags
+  -  ```var React = require('react');```
+   <br>
+```var ReactDOM = require('react-dom');```
+<br><br>
+
+    ```ReactDOM.render(<h1>{2+3}</h1>,document.getElementById('app'));```
+
+    This will display 5 as a H1  in the place where app is defined.   
